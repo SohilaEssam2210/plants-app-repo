@@ -14,7 +14,7 @@ function Home() {
       <NewsTicker />
       <Achievements />
       <LabRoles />
-      <LabRoleSlider />
+      {/* <LabRoleSlider /> */}
       <PartnersMember />
       <NewsSection />
     </>

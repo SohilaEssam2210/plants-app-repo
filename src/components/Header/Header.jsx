@@ -215,6 +215,11 @@ const Header = () => {
                 </Link>
               </li>
             </ul>
+            <div className="login">
+              <Link to="/login" className="btn">
+                <span>Login</span>
+              </Link>
+            </div>
           </div>
         </nav>
       </header>

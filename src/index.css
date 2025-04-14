@@ -1,3 +1,6 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 @import "slick-carousel/slick/slick.css";
 @import "slick-carousel/slick/slick-theme.css";
 
@@ -342,6 +345,7 @@ h6 {
 .main-nav {
   height: calc(var(--header-height));
   display: flex;
+  flex-direction: row;
   column-gap: 2rem;
 }
 
@@ -468,6 +472,13 @@ h6 {
   column-gap: .5rem;
   font-weight: var(--font-semi-bold);
   transition: background-color .3s;
+}
+
+.nav-menu {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
 }
 
 @media screen and (min-width: 1119px) {
@@ -900,7 +911,7 @@ h6 {
   display: flex;
   /* flex-wrap: wrap; */
   gap: 1rem;
-  will-change: transform !important ; 
+  will-change: transform !important;
 }
 
 .scroller[data-animated="true"] {
@@ -2088,7 +2099,7 @@ h6 {
   border-radius: 15px;
   grid-column: span 4;
   /* gap: 20px !important; */
-    margin: 10px;
+  margin: 10px;
 }
 
 .related .related__img {
@@ -3435,4 +3446,3 @@ tr:hover {
     text-align: left;
   }
 }
-

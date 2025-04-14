@@ -7,11 +7,11 @@ const NewsTicker = () => {
   const settings = {
     dots: false,
     infinite: true,
-    slidesToShow: 3,
+    slidesToShow:2,
     slidesToScroll: 1,
     autoplay: true,
-    speed: 5000,
-    autoplaySpeed: 2000,
+    speed: 7000,
+    autoplaySpeed: 3000,
     cssEase: "linear",
   };
 

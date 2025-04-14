@@ -11,7 +11,7 @@ function OurPartnersSlider() {
   const settings = {
     dots: false,
     infinite: true,
-    slidesToShow: 3,
+    slidesToShow: 6,
     slidesToScroll: 1,
     autoplay: true,
     speed: 5000,

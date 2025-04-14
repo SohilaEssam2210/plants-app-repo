@@ -11,6 +11,8 @@ import { LabUnits } from "./pages/LabUnits";
 import { ServicesCost } from "./pages/ServicesCost";
 import SingleNews from "./pages/SingleNews";
 import SinglePerson from "./pages/SinglePerson";
+import Login from "./pages/Login";
+import { AuthProvider } from "./context/AuthContext";
 
 let router = createBrowserRouter([
   {
@@ -25,12 +27,17 @@ let router = createBrowserRouter([
       { path: "serviceCost", element: <ServicesCost /> },
       { path: "singleNews", element: <SingleNews /> },
       { path: "singlePerson", element: <SinglePerson /> },
+      { path: "login", element: <Login /> },
     ],
   },
 ]);
 
 function App() {
-  return <RouterProvider router={router}></RouterProvider>;
+  return (
+    <AuthProvider>
+      <RouterProvider router={router}></RouterProvider>;
+    </AuthProvider>
+  );
 }
 
 export default App;
